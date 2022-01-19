@@ -8,7 +8,6 @@ def encrypt(key,plaintext):
         char = plaintext[x]
         ciphertext += chr((ord(char) + key - 65) % 26  + 65)        
     return ciphertext
-print("cipher text" + encrypt(key,plaintext))
 
 
 def decrypt(key,ciphertext):
@@ -18,4 +17,3 @@ def decrypt(key,ciphertext):
         char = ciphertext[x]
         plaintext += chr((ord(char) - key - 65) % 26  + 65)        
     return plaintext
-print("decript:" + decrypt(key,ciphertext))

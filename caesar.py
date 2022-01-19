@@ -1,7 +1,4 @@
 
-key = int(input("key"))
-plaintext = str(input("plaintext"))
-ciphertext = str(input("ciphertext"))
 
 
 def encrypt(key,plaintext):
